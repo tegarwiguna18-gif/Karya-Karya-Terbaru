@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Karya | Creator Tegar Wiguna</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#7c3aed',
+                        accent: '#ec4899',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-main {
+                background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+            }
+            .logo-tw {
+                background: linear-gradient(135deg, #4f46e5, #7c3aed);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .btn-gradient {
+                background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+                transition: all 0.3s ease;
+            }
+            .btn-gradient:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+            }
+        }
+    </style>
+
+    <!-- Meta Tag Berbagi -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kumpulan Karya | Creator Tegar Wiguna">
+    <meta property="og:description" content="Koleksi karya digital dan alat bantu buatan Creator Tegar Wiguna — kalkulator usia, cinta, kesehatan, dan lainnya!">
+    <meta property="og:image" content="https://i.imgur.com/8Z7XQfL.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+
+    <!-- Bagian Atas -->
+    <header class="bg-gradient-main text-white py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <div class="bg-white p-2 rounded-full shadow-lg">
+                    <span class="text-2xl font-extrabold logo-tw">TW</span>
+                </div>
+            </div>
+            <h1 class="text-[clamp(1.8rem,5vw,2.8rem)] font-bold mb-3">Kumpulan Karya Saya</h1>
+            <h2 class="text-xl md:text-2xl font-medium mb-4">Creator Tegar Wiguna</h2>
+            <p class="text-indigo-100 max-w-xl mx-auto">Koleksi alat bantu digital, hiburan, dan proyek sederhana yang saya buat dengan penuh ketelitian dan semangat belajar.</p>
+        </div>
+    </header>
+
+    <!-- Bagian Karya -->
+    <main class="max-w-5xl mx-auto px-4 py-12">
+        <h3 class="text-2xl font-bold text-dark mb-8 text-center">✨ Karya-Karya Terbaru</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Kartu 1: Kalkulator Usia -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-500">
+                <div class="text-4xl text-blue-500 mb-4 text-center"><i class="fa fa-calendar"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">Kalkulator Usia Akurat</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Hitung rincian usia tahun, bulan, hari, total hari hidup, dan sisa hari ulang tahun.</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Usia-Akurat/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
+
+            <!-- Kartu 2: Kalkulator Cinta -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-pink-500">
+                <div class="text-4xl text-pink-500 mb-4 text-center"><i class="fa fa-heart"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">Kalkulator Kecocokan Cinta</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Cek seberapa cocok nama kamu dengan dia lengkap persentase dan pesan penyemangat.</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Cinta/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
+
+            <!-- Kartu 3: Kalkulator Kesehatan -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-green-500">
+                <div class="text-4xl text-green-500 mb-4 text-center"><i class="fa fa-heartbeat"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">Kalkulator Kesehatan Tubuh</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Cek Indeks Massa Tubuh (BMI), kategori berat badan, dan saran gaya hidup sehat.</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Kesehatan-Tubuh/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
+
+        </div>
+
+        <!-- Tombol Bagikan -->
+        <div class="mt-12 text-center">
+            <a href="https://api.whatsapp.com/send?text=Lihat%20kumpulan%20karya%20keren%20dari%20Creator%20Tegar%20Wiguna:%20https://tegarwiguna18-gif.github.io/Kumpulan-Karya/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-xl shadow-md transition-all">
+                <i class="fa fa-whatsapp mr-2"></i>Bagikan Halaman Ini
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-6 px-4 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="font-medium mb-2">Dibuat dengan semangat belajar oleh Creator Tegar Wiguna</p>
+            <p class="text-gray-400 text-sm">© 2026 Kumpulan Karya Tegar Wiguna | Semua Hak Dilindungi</p>
+        </div>
+    </footer>
+
+</body>
+</html>
