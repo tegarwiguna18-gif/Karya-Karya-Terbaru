@@ -15,6 +15,10 @@
                         secondary: '#7c3aed',
                         accent: '#ec4899',
                         dark: '#1e293b',
+                        tiktok: {
+                            blue: '#25F4EE',
+                            red: '#FF0050',
+                        }
                     },
                     fontFamily: {
                         sans: ['Inter', 'system-ui', 'sans-serif'],
@@ -40,6 +44,11 @@
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
+            }
+            .gradient-text {
+                background: linear-gradient(90deg, #25F4EE 0%, #FF0050 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
             .btn-gradient {
                 background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
@@ -81,53 +90,57 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-             <!-- Kartu Koleksi Lagu -->
-             <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-600">
-                 <div class="text-4xl text-blue-600 mb-4 text-center"><i class="fa fa-music"></i></div>
-                 <h4 class="text-xl font-bold text-center mb-2">🎵 Koleksi Lagu Karya Tegar Wiguna</h4>
-                 <p class="text-gray-600 text-sm text-center mb-4">Daftar lagu orisinal ciptaan saya di channel YouTube Ragam FM Studio 🎶</p>
-                 <a href="https://tegarwiguna18-gif.github.io/Koleksi-Lagu-Ragam-FM-Studio/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Lihat Karya</a>
-             </div>
+            <!-- Kartu Koleksi Lagu -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-600">
+                <div class="text-4xl text-blue-600 mb-4 text-center"><i class="fa fa-music"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">🎵 Koleksi Lagu Karya Tegar Wiguna</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Daftar lagu orisinal ciptaan saya di channel YouTube Ragam FM Studio 🎶</p>
+                <a href="https://tegarwiguna18-gif.github.io/Koleksi-Lagu-Ragam-FM-Studio/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Lihat Karya</a>
+            </div>
 
-                <!-- Kartu: Portal Berita & Tulisan Ragam FM News -->
-<div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-600">
-    <div class="text-4xl text-blue-600 mb-4 text-center">
-        <i class="fa fa-newspaper-o"></i>
-    </div>
-    <h4 class="text-xl font-bold text-center mb-2">📰 Ragam FM News</h4>
-    <p class="text-gray-600 text-sm text-center mb-4">Portal berita, pandangan, dan tulisan orisinal karya sendiri ✍️</p>
-    <a href="https://tegarwiguna18-gif.github.io/Ragam-FM-News/" target="_blank" rel="noopener noreferrer" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">
-        Buka Portal Berita
-    </a>
-</div>
-                 <!-- Tombol Buka Karya - Gaya Kartu -->
-  <!-- Ikon TikTok -->
-  <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-tiktok-blue/20 to-tiktok-red/20 flex items-center justify-center">
-    <svg 
-      width="24" 
-      height="24" 
-      viewBox="0 0 24 24" 
-      fill="none"
-      class="text-tiktok-blue group-hover:text-tiktok-red transition-colors duration-300"
-    >
-      
-  <!-- Teks -->
-  <div class="flex-1">
-    <h3 class="text-lg font-semibold text-tiktok-text group-hover:gradient-text transition-all">
-      Kalkulator Level TikTok
-    </h3>
-    <p class="text-sm text-tiktok-muted mt-1">
-      Hitung estimasi biaya naik level akun secara akurat
-    </p>
-      <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Level-Akun-Tiktok/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-  </div>
-             <!-- Kartu Baru: Kalkulator Diskon -->
-             <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-pink-500">
-                 <div class="text-4xl text-pink-500 mb-4 text-center"><i class="fa fa-tags"></i></div>
-                 <h4 class="text-xl font-bold text-center mb-2">🏷️ Kalkulator Diskon & Harga Akhir</h4>
-                 <p class="text-gray-600 text-sm text-center mb-4">Cek potongan harga, uang yang dihemat, dan harga akhir yang harus dibayar 🛍️</p>
-                 <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Diskon/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-             </div>
+            <!-- Kartu: Portal Berita & Tulisan Ragam FM News -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-600">
+                <div class="text-4xl text-blue-600 mb-4 text-center">
+                    <i class="fa fa-newspaper-o"></i>
+                </div>
+                <h4 class="text-xl font-bold text-center mb-2">📰 Ragam FM News</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Portal berita, pandangan, dan tulisan orisinal karya sendiri ✍️</p>
+                <a href="https://tegarwiguna18-gif.github.io/Ragam-FM-News/" target="_blank" rel="noopener noreferrer" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">
+                    Buka Portal Berita
+                </a>
+            </div>
+
+            <!-- Kartu: Kalkulator Level TikTok -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-purple-600">
+                <div class="text-4xl mb-4 text-center">
+                    <svg 
+                        width="36" 
+                        height="36" 
+                        viewBox="0 0 24 24" 
+                        fill="none"
+                        class="inline-block"
+                    >
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.87 2.87 0 0 1 1.43.39V9.37a6.31 6.31 0 0 0-1-.08 6.33 6.33 0 0 0 0 12.66 6.33 6.33 0 0 0 6.33-6.33V9.83a8.16 8.16 0 0 0 4.77 1.54v-3.4a4.85 4.85 0 0 1-1.42-.28zM9.98 18.73a3.06 3.06 0 0 1-2.19-5.24 3.06 3.06 0 0 1 5.23 2.18 3.06 3.06 0 0 1-3.04 3.06z" fill="url(#tiktok-gradient)"/>
+                        <defs>
+                            <linearGradient id="tiktok-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#25F4EE" />
+                                <stop offset="100%" stop-color="#FF0050" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold text-center mb-2 gradient-text">Kalkulator Level TikTok</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Hitung estimasi biaya naik level akun secara akurat 💰</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Level-Akun-Tiktok/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
+
+            <!-- Kartu Baru: Kalkulator Diskon -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-pink-500">
+                <div class="text-4xl text-pink-500 mb-4 text-center"><i class="fa fa-tags"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">🏷️ Kalkulator Diskon & Harga Akhir</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Cek potongan harga, uang yang dihemat, dan harga akhir yang harus dibayar 🛍️</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Diskon/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
             
             <!-- Kartu 1: Kalkulator Usia -->
             <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-500">
@@ -146,15 +159,16 @@
             </div>
 
             <!-- Kartu Baru: Kalkulator Seberapa Sayang Dia -->
-<div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-pink-500">
-    <div class="text-4xl text-pink-500 mb-4 text-center"><i class="fa fa-heart"></i></div>
-    <h4 class="text-xl font-bold text-center mb-2">💖 Seberapa Sayang Dia?</h4>
-    <p class="text-gray-600 text-sm text-center mb-4">Cek rasa sayang dia lewat pertanyaan sederhana yang jujur 💌</p>
-    <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Sayang-Dia/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-</div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-pink-500">
+                <div class="text-4xl text-pink-500 mb-4 text-center"><i class="fa fa-heart"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">💖 Seberapa Sayang Dia?</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Cek rasa sayang dia lewat pertanyaan sederhana yang jujur 💌</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Sayang-Dia/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
+
             <!-- Kartu Baru: Kalkulator Zodiak -->
             <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-blue-500">
-                <div class="text-4xl text-blue-500 mb-4 text-center"><i class="fa fa-heart"></i></div>
+                <div class="text-4xl text-blue-500 mb-4 text-center"><i class="fa fa-star"></i></div>
                 <h4 class="text-xl font-bold text-center mb-2">Kalkulator Kecocokan Zodiak</h4>
                 <p class="text-gray-600 text-sm text-center mb-4">Cek seberapa cocok zodiak kamu dengan dia lengkap persentase dan pesan penyemangat.</p>
                 <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Kecocokan-Zodiak-Dan-Waktu-Baik/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
@@ -169,62 +183,60 @@
             </div>
 
             <!-- Kartu Baru: Kalkulator Tabungan -->
-<div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-amber-500">
-    <div class="text-4xl text-amber-500 mb-4 text-center"><i class="fa fa-money"></i></div>
-    <h4 class="text-xl font-bold text-center mb-2">Kalkulator Tabungan</h4>
-    <p class="text-gray-600 text-sm text-center mb-4">Rencanakan target tabunganmu, hitung waktu yang dibutuhkan dan jumlah yang harus disisihkan.</p>
-    <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Tabungan/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-</div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-amber-500">
+                <div class="text-4xl text-amber-500 mb-4 text-center"><i class="fa fa-money"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">Kalkulator Tabungan</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Rencanakan target tabunganmu, hitung waktu yang dibutuhkan dan jumlah yang harus disisihkan.</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Tabungan/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
 
-              <!-- Kartu Baru: Kalkulator Uang Saku -->
-<div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-orange-500">
-    <div class="text-4xl text-orange-500 mb-4 text-center"><i class="fa fa-money"></i></div>
-    <h4 class="text-xl font-bold text-center mb-2">Kalkulator Uang Saku</h4>
-    <p class="text-gray-600 text-sm text-center mb-4">Atur uang saku harian/mingguan/bulanan, kelola kebutuhan, keinginan dan tabunganmu.</p>
-    <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Uang-Saku/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-</div>
+            <!-- Kartu Baru: Kalkulator Uang Saku -->
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-orange-500">
+                <div class="text-4xl text-orange-500 mb-4 text-center"><i class="fa fa-money"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">Kalkulator Uang Saku</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Atur uang saku harian/mingguan/bulanan, kelola kebutuhan, keinginan dan tabunganmu.</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Uang-Saku/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
 
             <!-- Kartu Baru: Kalkulator Bunga Tabungan -->
-<div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-green-600">
-    <div class="text-4xl text-green-600 mb-4 text-center"><i class="fa fa-bank"></i></div>
-    <h4 class="text-xl font-bold text-center mb-2">🏦 Kalkulator Bunga Tabungan</h4>
-    <p class="text-gray-600 text-sm text-center mb-4">Hitung keuntungan bunga tabunganmu di bank dan total uang akhir yang didapat 📈</p>
-    <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Bunga-Tabungan/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
-</div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border-t-4 border-green-600">
+                <div class="text-4xl text-green-600 mb-4 text-center"><i class="fa fa-bank"></i></div>
+                <h4 class="text-xl font-bold text-center mb-2">🏦 Kalkulator Bunga Tabungan</h4>
+                <p class="text-gray-600 text-sm text-center mb-4">Hitung keuntungan bunga tabunganmu di bank dan total uang akhir yang didapat 📈</p>
+                <a href="https://tegarwiguna18-gif.github.io/Kalkulator-Bunga-Tabungan/" target="_blank" class="block text-center btn-gradient text-white py-2 rounded-lg font-medium">Buka Karya</a>
+            </div>
 
         </div>
 
         <!-- BAGIAN SOSIAL MEDIA -->
-<div class="mt-12 p-6 bg-white rounded-2xl shadow-lg text-center">
-    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-2">
-        <i class="fa fa-link text-primary"></i> Hubungi & Ikuti Saya
-    </h3>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-        
-        <a href="https://wa.me/6283818554664" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-medium transition-all">
-            <i class="fa fa-whatsapp"></i> WhatsApp
-        </a>
+        <div class="mt-12 p-6 bg-white rounded-2xl shadow-lg text-center">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-2">
+                <i class="fa fa-link text-primary"></i> Hubungi & Ikuti Saya
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                
+                <a href="https://wa.me/6283818554664" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-medium transition-all">
+                    <i class="fa fa-whatsapp"></i> WhatsApp
+                </a>
 
-        <a href="https://www.tiktok.com/@ragamfm" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-xl font-medium transition-all">
-            <i class="fa fa-music"></i> TikTok
-        </a>
+                <a href="https://www.tiktok.com/@ragamfm" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-black hover:bg-gray-800 text-white py-3 px-4 rounded-xl font-medium transition-all">
+                    <i class="fa fa-music"></i> TikTok
+                </a>
 
-        <a href="https://instagram.com/ragamfm_" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white py-3 px-4 rounded-xl font-medium transition-all">
-            <i class="fa fa-instagram"></i> Instagram
-        </a>
+                <a href="https://instagram.com/ragamfm_" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white py-3 px-4 rounded-xl font-medium transition-all">
+                    <i class="fa fa-instagram"></i> Instagram
+                </a>
 
-        <a href="https://youtube.com/@kangtw98?si=i_E_YsNLwGCFG3QF" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-xl font-medium transition-all">
-            <i class="fa fa-youtube"></i> YouTube
-        </a>
+                <a href="https://youtube.com/@kangtw98?si=i_E_YsNLwGCFG3QF" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-xl font-medium transition-all">
+                    <i class="fa fa-youtube"></i> YouTube
+                </a>
 
-        <a href="https://www.lemon8-app.com/@ragamfm" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-800 py-3 px-4 rounded-xl font-medium transition-all col-span-full sm:col-span-1">
-            <i class="fa fa-lemon-o"></i> Lemon8
-        </a>
+                <a href="https://www.lemon8-app.com/@ragamfm" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-800 py-3 px-4 rounded-xl font-medium transition-all col-span-full sm:col-span-1">
+                    <i class="fa fa-lemon-o"></i> Lemon8
+                </a>
 
-    </div>
-    <p class="text-xs text-gray-500 mt-4">Terhubung lebih dekat dengan Creator Tegar Wiguna & Ragam FM Studio</p>
-</div>
-            </a>
+            </div>
+            <p class="text-xs text-gray-500 mt-4">Terhubung lebih dekat dengan Creator Tegar Wiguna & Ragam FM Studio</p>
         </div>
     </main>
 
@@ -238,4 +250,5 @@
     </footer>
 
 </body>
-</html>
+    </html>
+    
